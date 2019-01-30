@@ -1,0 +1,17 @@
+{
+  "name": "europemusic",
+  "version": "1.0.0",
+  "description": "Website with nodejs, express, sequelize, mysql, pug template engine",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/app.js"
+  },
+  "author": "Rashid Majeed",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "pug": "^2.0.3"
+  }
+}
