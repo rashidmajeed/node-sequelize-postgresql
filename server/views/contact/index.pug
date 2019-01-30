@@ -1,0 +1,36 @@
+extends ../layout/index
+
+block content
+  .super_container     
+    .container
+      .contact_content.text-center
+            h1 #{pageTitle}
+      .row
+        // Contact Form
+        .col-lg-6
+            .contact_title Send us a message
+            form#contact_form.contact_form(action='#')
+              input.contact_input(type='text', placeholder='Name', required='required')
+              input.contact_input(type='email', placeholder='E-mail', required='required')
+              input.contact_input(type='text', placeholder='Subject')
+              textarea.contact_input.contact_textarea(placeholder='Message', required='required')
+              button.contact_button Send Message
+        // Contact Info
+        .col-lg-6.contact_col
+          .contact_info
+            .contact_title Where to find us
+            .contact_text
+              p
+                | Feel free to contact us. We are providing 24x7 services hours to our visitors. Leave us a message and we will respond you very soon :)
+            .contact_info_list
+              ul
+                li.d-flex.flex-row.align-items-start.justify-content-start
+                  div
+                    div Address
+                  div Brydes Alle 76, Copenhagen Denmark
+                li.d-flex.flex-row.align-items-start.justify-content-start
+                  div
+                    div Phone
+                  div +45 79532453
+                li.d-flex.flex-row.align-items-start.justify-content-start
+                  div

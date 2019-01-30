@@ -125,7 +125,7 @@ p a:hover::after {
   bottom: -20px;
   width: 100%;
   height: 17px;
-  background: #978e93;
+  background: #992d69;
   content: "";
   z-index: -1;
   visibility: hidden;
@@ -172,11 +172,175 @@ p a:hover::after {
 }
 
 /*********************************
+ About
+*********************************/
+
+blockquote {
+  border-left: 10px solid #ffffff;
+  margin: 4em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #ffffff;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-size: 1rem;
+  line-height: 2;
+}
+.icons-list {
+  background-color: rgb(39, 34, 34);
+}
+.icons-list img {
+  height: 100px;
+}
+
+/*********************************
+6. Contact
+*********************************/
+.contact_content {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.contact_heading {
+  font-size: 37px;
+  color: #ffffff;
+}
+.contact_title {
+  font-size: 19px;
+  color: #ffffff;
+  line-height: 1.2;
+}
+.contact_form {
+  display: block;
+  width: 100%;
+  margin-top: 59px;
+  margin-bottom: 30px;
+}
+.contact_input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: #343434;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  border-bottom: solid 3px transparent;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.contact_input:hover,
+.contact_input:focus {
+  border-bottom: solid 3px #de4f32;
+}
+.contact_textarea {
+  height: 161px;
+  padding-top: 18px;
+}
+.contact_form input:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contact_input::-webkit-input-placeholder {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  color: #ffffff !important;
+}
+.contact_input:-moz-placeholder {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  color: #ffffff !important;
+}
+.contact_input::-moz-placeholder {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  color: #ffffff !important;
+}
+.contact_input:-ms-input-placeholder {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  color: #ffffff !important;
+}
+.contact_input::input-placeholder {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-style: italic;
+  color: #ffffff !important;
+}
+.contact_button {
+  width: 173px;
+  height: 50px;
+  background: #de4f32;
+  color: #ffffff;
+  font-size: 14px;
+  border: solid 3px #de4f32;
+  outline: none;
+  cursor: pointer;
+  margin-top: 39px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.contact_button:hover {
+  background: transparent;
+  color: #de4f32;
+}
+.contact_text {
+  margin-top: 50px;
+}
+.contact_info_list {
+  margin-top: 84px;
+  padding-left: 13px;
+}
+.contact_info_list ul li {
+  font-size: 16px;
+  color: #aaaaaa;
+}
+.contact_info_list ul li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.contact_info_list ul li > div:first-child > div {
+  width: 96px;
+  color: #de4f32;
+}
+.social {
+  margin-top: 42px;
+  left: -5px;
+  padding-left: 13px;
+}
+.social ul li:not(:last-of-type) {
+  margin-right: 26px;
+}
+.social ul li a i {
+  font-size: 15px;
+  padding: 5px;
+  color: #de4f32;
+}
+.social ul li a i:hover {
+  color: #ffffff;
+}
+
+/*********************************
 12. Footer
 *********************************/
 
 .footer {
-  background-color: rgba(0, 0, 0, 0.01) 0 0 1px;
+  background-color: rgb(141, 125, 125);
   display: block;
   position: relative;
 }

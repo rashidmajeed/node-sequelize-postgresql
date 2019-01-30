@@ -8,6 +8,18 @@ module.exports = function() {
       pageTitle: "Home"
     });
   });
+  // About Us page
+  router.get("/about", (req, res) => {
+    res.render("about", {
+      pageTitle: "About Us"
+    });
+  });
+  // Contact page
+  router.get("/contact", (req, res) => {
+    res.render("contact", {
+      pageTitle: "Contact Us"
+    });
+  });
 
   return router;
 };
