@@ -1,0 +1,43 @@
+.super_container
+    footer.footer
+      .background_image(style='background-image:url(/img/footer.jpg)')
+      .footer_content
+        .container
+          .row
+            .col.text-center
+              // Logo
+              .logo
+                a.d-flex.flex-row.align-items-end.justify-content-start(href='#')
+                  span.logo_bars.d-flex.flex-row.align-items-end.justify-content-between
+                    span
+                    span
+                    span
+                    span
+                    span
+                  span.
+                  a(href='/') 
+                    img(src="/img/logo.png", alt="logo")
+              // Footer Social
+              .footer_social
+                ul.d-flex.flex-row.align-items-center.justify-content-center
+                  li
+                    a(href='#')
+                      i.fa.fa-pinterest(aria-hidden='true')
+                  li
+                    a(href='#')
+                      i.fa.fa-facebook(aria-hidden='true')
+                  li
+                    a(href='#')
+                      i.fa.fa-twitter(aria-hidden='true')
+                  li
+                    a(href='#')
+                      i.fa.fa-dribbble(aria-hidden='true')
+                  li
+                    a(href='#')
+                      i.fa.fa-behance(aria-hidden='true')
+      .footer_bar
+        .container
+          .row
+            .col
+              .copyright.text-center
+                a Copyright © #{currentYear} | All rights reserved by emusic 

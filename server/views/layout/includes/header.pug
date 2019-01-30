@@ -1,0 +1,28 @@
+.super_container
+  // Header
+  header
+    div.main-nav
+      .container
+        .row.justify-content-center.justify-content-md-between.align-items-center.py-4
+            .col-6.col-md-4
+                a(href="/")
+                    img(src="/img/logo.png", alt="Logo")
+            .col-md-8
+                nav.nav.justify-content-center.justify-content-md-end
+                    a.nav-link(href="/about", class=(currentPage === '/about' ? 'active' : '')) About Us
+                    a.nav-link(href="/travels", class=(currentPage === '/travels' ? 'active' : '')) Upcoming Music
+                    a.nav-link(href="/testimonials", class=(currentPage === '/testimonials' ? 'active' : '')) Testimonials
+                    a.nav-link(href="/contact", class=(currentPage === '/contact' ? 'active' : '')) Contacts
+
+
+  // Home
+  .home
+    .home_container_image
+          .background_image(style='background-image:url(/img/headerimg.jpg)')
+          .home_container
+            .home_container_inner.d-flex.flex-column.align-items-center.justify-content-center
+              .home_content.text-center
+                .home_title
+                  h3 Music is all around
+                .home_link
+                  a(href='#') Listen to Europeon Music
